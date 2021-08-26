@@ -127,14 +127,25 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\flickity.css" />
+    <Content Include="Content\css\styles.css" />
+    <Content Include="Content\images\classmates\amandaallen.jpg" />
+    <Content Include="Content\images\classmates\ashleysmith.jpg" />
+    <Content Include="Content\images\classmates\calebmitchell.jpg" />
+    <Content Include="Content\images\classmates\coreyanderson.jpg" />
+    <Content Include="Content\images\classmates\jacobroelofsz.jpg" />
+    <Content Include="Content\images\classmates\michaelrussell.jpg" />
+    <Content Include="Content\images\profilepic.jpg" />
+    <Content Include="Content\images\projects\ByteBrothersPic.jpg" />
+    <Content Include="Content\images\projects\dungeonapplication.jpg" />
+    <Content Include="Content\images\projects\mmgifts.jpg" />
+    <Content Include="Content\js\flickity.pkgd.js" />
+    <Content Include="Content\js\jquery.js" />
+    <Content Include="Content\js\main.js" />
+    <Content Include="Content\js\scripts.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="_Archive\contact.html" />
@@ -159,6 +170,7 @@
     <Content Include="_Archive\links.html" />
     <Content Include="_Archive\portfolio.html" />
     <Content Include="_Archive\resume.html" />
+    <Content Include="Content\resume\William McCarty -- Resume.pdf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -196,10 +208,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
