@@ -137,6 +137,28 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="_Archive\contact.html" />
+    <Content Include="_Archive\css\flickity.css" />
+    <Content Include="_Archive\css\styles.css" />
+    <Content Include="_Archive\favicon.ico" />
+    <Content Include="_Archive\images\classmates\amandaallen.jpg" />
+    <Content Include="_Archive\images\classmates\ashleysmith.jpg" />
+    <Content Include="_Archive\images\classmates\calebmitchell.jpg" />
+    <Content Include="_Archive\images\classmates\coreyanderson.jpg" />
+    <Content Include="_Archive\images\classmates\jacobroelofsz.jpg" />
+    <Content Include="_Archive\images\classmates\michaelrussell.jpg" />
+    <Content Include="_Archive\images\profilepic.jpg" />
+    <Content Include="_Archive\images\projects\ByteBrothersPic.jpg" />
+    <Content Include="_Archive\images\projects\dungeonapplication.jpg" />
+    <Content Include="_Archive\images\projects\mmgifts.jpg" />
+    <Content Include="_Archive\index.html" />
+    <Content Include="_Archive\js\flickity.pkgd.js" />
+    <Content Include="_Archive\js\jquery.js" />
+    <Content Include="_Archive\js\main.js" />
+    <Content Include="_Archive\js\scripts.js" />
+    <Content Include="_Archive\links.html" />
+    <Content Include="_Archive\portfolio.html" />
+    <Content Include="_Archive\resume.html" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -162,6 +184,8 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <None Include="_Archive\packages.config" />
+    <Content Include="_Archive\resume\William McCarty -- Resume.pdf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
