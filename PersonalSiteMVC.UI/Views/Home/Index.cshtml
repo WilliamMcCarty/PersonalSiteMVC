@@ -1,31 +1,119 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "William McCarty | Home";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<div class="container-fluid p-0">
+    <section class="resume-section" id="about">
+        <div class="resume-section-content">
+            <h1 class="mb-0 textShadow">
+                William
+                <span class="text-primary">McCarty</span>
+            </h1>
+            <div class="subheading mb-5">
+                1210 Faulkner Drive · Pleasant Hill, MO 64080 · (816) 288-0274 ·
+                <a href="mailto:WilliamMcCarty1@outlook.com">WilliamMcCarty1@outlook.com</a>
+            </div>
+            <p class="lead mb-5">I am a graduate of the full-stack web development program at Centriq. I have been working within the Information Technology field for over 30 years. In July 2021 I decided to go back to school to update my skills with the new technology being used in the computer programming field.  I have done desktop application development, website development and SQL Server development.  I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value of the business.</p>
+            <div class="social-icons">
+                <a class="social-icon" style="box-shadow: 7px 5px 5px #999" href="https://www.linkedin.com/in/william-j-mccarty/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" style="box-shadow: 7px 5px 5px #999" href="https://github.com/williammccarty" target="_blank"><i class="fab fa-github"></i></a>
+                <!--<a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>-->
+                <a class="social-icon" style="box-shadow: 7px 5px 5px #999" href="https://www.facebook.com/bill.mccarty.522" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+            <h2 class="mb-5 textShadow">Technical Skills</h2>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0 textShadow">Application Development</h3>
+                    <p class="technicalSkillsP textShadow">Frontend - Windows Forms, Controls, Custom Controls</p>
+                    <p class="technicalSkillsP textShadow">Middle Tier - C#, VB, .NET</p>
+                    <p class="technicalSkillsP textShadow">Backend - MySQL, MSSQL</p>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-0">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0 textShadow">Web Development</h3>
+                    <p class="technicalSkillsP textShadow">Frontend - HTML5, JavaScript, jQuery, jQueryUI, CSS3, Responsive/Mobile Web Development, Bootstrap</p>
+                    <p class="technicalSkillsP textShadow">Middle Tier - C#, VB, .NET, Visual Studio 2005, 2010, 2015, 2017, C#.NET, ASP.NET, LINQ, MVC, EF.</p>
+                    <p class="technicalSkillsP textShadow">Backend - MySQL, MSSQL, ADO.NET, SQL, SQL Server, SSMSE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <section class="resume-section" id="education">
+        <div class="resume-section-content">
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+            <h2 class="mb-5 textShadow">Top 3 Projects</h2>
+
+            <!-- Flickity HTML init -->
+            <div class="carousel"
+                 data-flickity='{ "wrapAround": true, "selectedAttraction": 0.01, "friction": 0.25 }'>
+                <div class="carousel-cell">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <div><a href="http://bytebrothers.william-mccarty.com/" target="_blank"><img src="~/Content/images/projects/ByteBrothersPic.jpg" class="projectImage" alt="Byte Brothers Coding School" title="Byte Brothers Coding School" /></a></div>
+                            <h3 class="mb-0 textShadow">&nbsp;&nbsp;&nbsp;Byte Brothers Coding School</h3>
+                            <div class="subheading mb-3 textShadow">&nbsp;&nbsp;&nbsp;We Teach You How To Take A Byte Out Of Programming.</div>
+                            <div><a href="http://bytebrothers.william-mccarty.com/" target="_blank" class="classMemberLinks textShadow">&nbsp;&nbsp;&nbsp;&#128204; Visit Byte Brothers Coding School Website</a></div>
+                            <div class="projectName textShadow">&nbsp;&nbsp;&nbsp;Studio Project</div>
+                            <ul class="list-inline mb-0 mx-auto">
+                                <li class="list-inline-item">
+                                    <span class="projectPillLabel">&nbsp;&nbsp;HTML5&nbsp;&nbsp;</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <span class="projectPillLabel">&nbsp;&nbsp;CSS3&nbsp;&nbsp;</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <span class="projectPillLabel">&nbsp;&nbsp;JavaScript&nbsp;&nbsp;</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://github.com/WilliamMcCarty/FED1StudioProject" target="_blank" class="noUnderLine"><span class="projectPillLabel">&nbsp;&nbsp;GitHub&nbsp;&nbsp;</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <div><a href="https://github.com/WilliamMcCarty/DungeonApp" target="_blank"><img src="~/Content/images/projects/dungeonapplication.jpg" class="projectImage" alt="Dungeon Application" title="Dungeon Application" /></a></div>
+                            <h3 class="mb-0 textShadow">&nbsp;&nbsp;&nbsp;Text Based Console Application</h3>
+                            <div class="subheading mb-3 textShadow">&nbsp;&nbsp;&nbsp;Text based console game based on text interacton.</div>
+                            <div><a href="https://github.com/WilliamMcCarty/DungeonApp" target="_blank" class="classMemberLinks textShadow">&nbsp;&nbsp;&nbsp;&#128204; Visit GitHub to view the code</a></div>
+                            <div class="projectName textShadow">&nbsp;&nbsp;&nbsp;Dungeon Application</div>
+                            <ul class="list-inline mb-0 mx-auto">
+                                <li class="list-inline-item">
+                                    <span class="projectPillLabel">&nbsp;&nbsp;C#&nbsp;&nbsp;</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <span class="projectPillLabel">&nbsp;&nbsp;.NET Framework&nbsp;&nbsp;</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <span class="projectPillLabel">&nbsp;&nbsp;ASCII Art&nbsp;&nbsp;</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://github.com/WilliamMcCarty/DungeonApp" target="_blank" class="noUnderLine"><span class="projectPillLabel">&nbsp;&nbsp;GitHub&nbsp;&nbsp;</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0 textShadow">&nbsp;Name Of Project 3</h3>
+                            <div class="subheading mb-3">&nbsp;Brief Description</div>
+                            <div>&nbsp;Add some kind of photo with link to it</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0" />
 </div>

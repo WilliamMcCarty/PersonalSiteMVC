@@ -1,17 +1,70 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "William McCarty | Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<div class="container-fluid p-0">
+    <section class="resume-section" id="about">
+        <div class="resume-section-content">
+            <h1 class="mb-0 textShadow">
+                William
+                <span class="text-primary">McCarty</span>
+            </h1>
+            <div class="subheading mb-5">
+                1210 Faulkner Drive · Pleasant Hill, MO 64080 · (816) 288-0274 ·
+                <a href="mailto:WilliamMcCarty1@outlook.com">WilliamMcCarty1@outlook.com</a>
+            </div>
+            <p class="lead mb-5">I am a graduate of the full-stack web development program at Centriq. I have been working within the Information Technology field for over 30 years. In July 2021 I decided to go back to school to update my skills with the new technology being used in the computer programming field.  I have done desktop application development, website development and SQL Server development.  I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value of the business.</p>
+            <div class="social-icons">
+                <a class="social-icon" style="box-shadow: 7px 5px 5px #999" href="https://www.linkedin.com/in/william-j-mccarty/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" style="box-shadow: 7px 5px 5px #999" href="https://github.com/williammccarty" target="_blank"><i class="fab fa-github"></i></a>
+                <!--<a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>-->
+                <a class="social-icon" style="box-shadow: 7px 5px 5px #999" href="https://www.facebook.com/bill.mccarty.522" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+            <h2 class="mb-5 textShadow text-center">Get In Contact With Me</h2>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h4 class="mb-0 text-center">
+                        <span class="text-center" id="messageBack" style="font-weight: bold;"></span>
+                    </h4>
+                    <div class="subheading mb-3 classMemberName textShadow"></div>
+                    <p class="classMemberBio textShadow">
+                        <table align="center">
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 4px"><textarea rows="1" cols="27" class="form-control textareaNoResize" placeholder="Name" id="tbName"></textarea></td>
+                                    <td style="padding: 5px"><textarea rows="1" cols="27" class="form-control textareaNoResize" placeholder="Email" id="tbEmail"></textarea></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table align="center">
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 5px"><textarea rows="1" cols="60" class="form-control textareaNoResize" placeholder="Subject" id="tbSubject"></textarea></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table align="center">
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 5px"><textarea rows="5" cols="60" class="form-control" placeholder="Message" id="tbMessage"></textarea></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table align="center">
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 7px"><input type="button" class="btn-outline-dark" value="Send" style="width: 250px" onclick="sendContactUs()" /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
