@@ -198,6 +198,7 @@
     <Content Include="Views\Home\Links.cshtml" />
     <Content Include="Views\Home\Portfolio.cshtml" />
     <Content Include="Views\Home\Resume.cshtml" />
+    <Content Include="Views\Shared\_OriginalLayout.cshtml" />
     <None Include="_Archive\packages.config" />
     <Content Include="_Archive\resume\William McCarty -- Resume.pdf" />
   </ItemGroup>
