@@ -1,4 +1,6 @@
-﻿@{
+﻿@model PersonalSiteMVC.UI.Models.ContactViewModel
+
+@{
     ViewBag.Title = "William McCarty | Contact";
 }
 
@@ -33,38 +35,61 @@
                     </h4>
                     <div class="subheading mb-3 classMemberName textShadow"></div>
                     <p class="classMemberBio textShadow">
-                        <table align="center">
-                            <tbody>
-                                <tr>
-                                    <td style="padding: 4px"><textarea rows="1" cols="27" class="form-control textareaNoResize" placeholder="Name" id="tbName"></textarea></td>
-                                    <td style="padding: 5px"><textarea rows="1" cols="27" class="form-control textareaNoResize" placeholder="Email" id="tbEmail"></textarea></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table align="center">
-                            <tbody>
-                                <tr>
-                                    <td style="padding: 5px"><textarea rows="1" cols="60" class="form-control textareaNoResize" placeholder="Subject" id="tbSubject"></textarea></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table align="center">
-                            <tbody>
-                                <tr>
-                                    <td style="padding: 5px"><textarea rows="5" cols="60" class="form-control" placeholder="Message" id="tbMessage"></textarea></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table align="center">
-                            <tbody>
-                                <tr>
-                                    <td style="padding: 7px"><input type="button" class="btn-outline-dark" value="Send" style="width: 250px" onclick="sendContactUs()" /></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+                            <table align="center">
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 4px">
+                                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control textareaNoResize", placeholder = "Name", rows = "1", cols = "27" } })
+                                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                                        </td>
+                                        <td style="padding: 5px">
+                                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control textareaNoResize", placeholder = "Email", rows = "1", cols = "27" } })
+                                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table align="center">
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 5px">
+                                            @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control textareaNoResize", placeholder = "Subject", rows = "1", cols = "60" } })
+                                            @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table align="center">
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 5px">
+                                            @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control", placeholder = "Message", rows = "5", cols = "60" } })
+                                            @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table align="center">
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 7px">
+                                            <input type="submit" class="btn-outline-dark" value="Send" style="width: 250px" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        }
                     </p>
                 </div>
             </div>
         </div>
     </section>
 </div>
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <h3>@Html.Raw(ViewBag.ErrorMessage)</h3>
+}

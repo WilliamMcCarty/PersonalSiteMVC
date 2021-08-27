@@ -48,25 +48,29 @@ namespace PersonalSiteMVC.UI.Controllers
                 return View(cvm);
             }
 
-            string message = $"You have received an email from {cvm.Email} with a subject: {cvm.Subject}.  Please respond to {cvm.Email} with your response to the following message: <br/>{cvm.Message}";
+            string MyMessage = $"You have received an email from {cvm.Email} with a subject: {cvm.Subject}.  Please respond to {cvm.Email} with your response to the following message: <br/>{cvm.Message}";
 
-            MailMessage mm = new MailMessage(ConfigurationManager.AppSettings["EmailUser"].ToString(), ConfigurationManager.AppSettings["EmailTo"].ToString(), cvm.Subject, message);
+            MailMessage mailMessage = new MailMessage(
+            ConfigurationManager.AppSettings["EmailUser"].ToString(),            
+            ConfigurationManager.AppSettings["EmailTo"].ToString(),
+            cvm.Subject, 
+            MyMessage);
 
-            mm.IsBodyHtml = true;
-            mm.Priority = MailPriority.High;
-            mm.ReplyToList.Add(cvm.Email);
+            mailMessage.IsBodyHtml = true;
+            mailMessage.Priority = MailPriority.High;
+            mailMessage.ReplyToList.Add(cvm.Email);
 
-            SmtpClient client = new SmtpClient(ConfigurationManager.AppSettings["EmailClient"].ToString());
+            SmtpClient mailClient = new SmtpClient(ConfigurationManager.AppSettings["EmailClient"].ToString());
 
-            client.Credentials = new NetworkCredential(ConfigurationManager.AppSettings["EmailUser"].ToString(), ConfigurationManager.AppSettings["EmailPass"].ToString());
+            mailClient.Credentials = new NetworkCredential(ConfigurationManager.AppSettings["EmailUser"].ToString(), ConfigurationManager.AppSettings["EmailPass"].ToString());
 
             try
             {
-                client.Send(mm);
+                mailClient.Send(mailMessage);
             }
             catch (Exception ex)
             {
-                ViewBag.CustomerMessage = $"We are sorry, but your request could not be completed at this time. " +
+                ViewBag.ErrorMessage = $"We are sorry, but your request could not be completed at this time. " +
                     $"Please try again later.  Error Message: <br/> {ex.StackTrace}";
                 return View(cvm);
             }
