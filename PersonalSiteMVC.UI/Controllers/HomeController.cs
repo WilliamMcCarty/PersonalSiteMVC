@@ -64,6 +64,10 @@ namespace PersonalSiteMVC.UI.Controllers
 
             mailClient.Credentials = new NetworkCredential(ConfigurationManager.AppSettings["EmailUser"].ToString(), ConfigurationManager.AppSettings["EmailPass"].ToString());
 
+            mailClient.Port = 8889;
+
+
+
             try
             {
                 mailClient.Send(mailMessage);
@@ -77,7 +81,7 @@ namespace PersonalSiteMVC.UI.Controllers
                 return View(cvm);
             }
 
-            return View("EmailConfirmtation", cvm);
+            return View();
         }
     }
 }
