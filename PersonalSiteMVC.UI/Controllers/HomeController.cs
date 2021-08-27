@@ -67,9 +67,11 @@ namespace PersonalSiteMVC.UI.Controllers
             try
             {
                 mailClient.Send(mailMessage);
+                ViewBag.SuccessMessage = "Thank you for contacting me, I will respond as soon as possible.";
             }
             catch (Exception ex)
             {
+                ViewBag.SuccessMessage = "Please try again later, there was a issue sending the message.";
                 ViewBag.ErrorMessage = $"We are sorry, but your request could not be completed at this time. " +
                     $"Please try again later.  Error Message: <br/> {ex.StackTrace}";
                 return View(cvm);

@@ -11,7 +11,9 @@
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
                     <h4 class="mb-0 text-center">
-                        <span class="text-center" id="messageBack" style="font-weight: bold;"></span>
+                        <span class="text-center" id="messageBack" style="font-weight: bold; color: darkgreen">
+                            @ViewBag.SuccessMessage
+                        </span>
                     </h4>
                     <div class="subheading mb-3 classMemberName textShadow"></div>
                     <p class="classMemberBio textShadow">
@@ -23,11 +25,11 @@
                                     <tr>
                                         <td style="padding: 4px">
                                             @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control textareaNoResize", placeholder = "Name", rows = "1", cols = "27" } })
-                                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger contactFormErrorBold" })
                                         </td>
                                         <td style="padding: 5px">
                                             @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control textareaNoResize", placeholder = "Email", rows = "1", cols = "27" } })
-                                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger contactFormErrorBold" })
                                         </td>
                                     </tr>
                                 </tbody>
@@ -37,7 +39,7 @@
                                     <tr>
                                         <td style="padding: 5px">
                                             @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control textareaNoResize", placeholder = "Subject", rows = "1", cols = "60" } })
-                                            @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
+                                            @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger contactFormErrorBold" })
                                         </td>
                                     </tr>
                                 </tbody>
@@ -47,7 +49,7 @@
                                     <tr>
                                         <td style="padding: 5px">
                                             @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control", placeholder = "Message", rows = "5", cols = "60" } })
-                                            @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+                                            @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger contactFormErrorBold" })
                                         </td>
                                     </tr>
                                 </tbody>
@@ -71,5 +73,5 @@
 
 @if (ViewBag.ErrorMessage != null)
 {
-    <h3>@Html.Raw(ViewBag.ErrorMessage)</h3>
+    <h4>@Html.Raw(ViewBag.ErrorMessage)</h4>
 }

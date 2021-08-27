@@ -11803,3 +11803,7 @@ section.resume-section {
 .textareaNoResize {
     resize: none;
 }
+
+.contactFormErrorBold {
+    font-weight: bold;
+}
