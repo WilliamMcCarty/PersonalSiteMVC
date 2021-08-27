@@ -128,7 +128,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Configs\SecretKey.xml" />
     <Content Include="Content\css\flickity.css" />
     <Content Include="Content\css\styles.css" />
     <Content Include="Content\images\classmates\amandaallen.jpg" />
