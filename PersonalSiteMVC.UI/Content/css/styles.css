@@ -8094,7 +8094,7 @@ textarea.form-control-lg {
 }
 
 .rounded-circle {
-    border-radius: 50% !important;
+    border-radius: 80% !important;
 }
 
 .rounded-pill {
@@ -11529,8 +11529,8 @@ p.lead {
         }
 
             #sideNav .navbar-brand .img-profile {
-                max-width: 10rem;
-                max-height: 10rem;
+                max-width: 13rem;
+                max-height: 13rem;
                 border: 0.5rem solid rgba(255, 255, 255, 0.2);
             }
 
