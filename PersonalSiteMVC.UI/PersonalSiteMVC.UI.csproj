@@ -139,6 +139,7 @@
     <Content Include="Content\images\profilepic.jpg" />
     <Content Include="Content\images\projects\ByteBrothersPic.jpg" />
     <Content Include="Content\images\projects\dungeonapplication.jpg" />
+    <Content Include="Content\images\projects\heidisite.JPG" />
     <Content Include="Content\images\projects\mmgifts.jpg" />
     <Content Include="Content\js\flickity.pkgd.js" />
     <Content Include="Content\js\jquery.js" />
