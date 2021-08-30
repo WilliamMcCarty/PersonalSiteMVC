@@ -24,11 +24,17 @@
                                 <tbody>
                                     <tr>
                                         <td style="padding: 4px">
-                                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control textareaNoResize", placeholder = "Name", rows = "1", cols = "27" } })
+                                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Name", size = "27" } })
+                                        </td>
+                                        <td style="padding: 5px">
+                                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "Email", size = "27" } })
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 4px">
                                             @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger contactFormErrorBold" })
                                         </td>
                                         <td style="padding: 5px">
-                                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control textareaNoResize", placeholder = "Email", rows = "1", cols = "27" } })
                                             @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger contactFormErrorBold" })
                                         </td>
                                     </tr>
@@ -38,7 +44,11 @@
                                 <tbody>
                                     <tr>
                                         <td style="padding: 5px">
-                                            @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control textareaNoResize", placeholder = "Subject", rows = "1", cols = "60" } })
+                                            @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control", placeholder = "Subject", size = "60" } })
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 5px">
                                             @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger contactFormErrorBold" })
                                         </td>
                                     </tr>
@@ -49,6 +59,10 @@
                                     <tr>
                                         <td style="padding: 5px">
                                             @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control", placeholder = "Message", rows = "5", cols = "60" } })
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 5px">
                                             @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger contactFormErrorBold" })
                                         </td>
                                     </tr>
