@@ -128,6 +128,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".gitignore" />
     <Content Include="Content\css\flickity.css" />
     <Content Include="Content\css\styles.css" />
     <Content Include="Content\images\classmates\amandaallen.jpg" />
@@ -173,7 +174,6 @@
     <Content Include="_Archive\portfolio.html" />
     <Content Include="_Archive\resume.html" />
     <Content Include="Content\resume\William McCarty -- Resume.pdf" />
-    <Content Include="Configs\SecretKey.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -207,6 +207,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Configs\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
