@@ -173,8 +173,8 @@
     <Content Include="_Archive\links.html" />
     <Content Include="_Archive\portfolio.html" />
     <Content Include="_Archive\resume.html" />
-    <Content Include="Content\resume\William McCarty -- Resume.pdf" />
     <Content Include="Configs\SecretKey.config" />
+    <Content Include="Content\resume\William %27Bill%27 McCarty - Resume IT.pdf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
