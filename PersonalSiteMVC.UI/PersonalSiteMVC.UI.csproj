@@ -143,6 +143,7 @@
     <Content Include="Content\images\projects\heidisite.JPG" />
     <Content Include="Content\images\projects\mmgifts.jpg" />
     <Content Include="Content\images\projects\StoreFront.jpg" />
+    <Content Include="Content\images\projects\ToDoApi.JPG" />
     <Content Include="Content\js\flickity.pkgd.js" />
     <Content Include="Content\js\jquery.js" />
     <Content Include="Content\js\main.js" />
