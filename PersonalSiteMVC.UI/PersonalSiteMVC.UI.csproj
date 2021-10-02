@@ -144,6 +144,7 @@
     <Content Include="Content\images\projects\mmgifts.jpg" />
     <Content Include="Content\images\projects\MovieAPI.jpg" />
     <Content Include="Content\images\projects\ReactPractice.JPG" />
+    <Content Include="Content\images\projects\ReactToDo.JPG" />
     <Content Include="Content\images\projects\StoreFront.jpg" />
     <Content Include="Content\images\projects\ToDoApi.JPG" />
     <Content Include="Content\js\flickity.pkgd.js" />
