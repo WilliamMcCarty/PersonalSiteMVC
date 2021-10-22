@@ -131,6 +131,7 @@
     <None Include=".gitignore" />
     <Content Include="Content\css\flickity.css" />
     <Content Include="Content\css\styles.css" />
+    <Content Include="Content\images\1634847072646.jpg" />
     <Content Include="Content\images\classmates\amandaallen.jpg" />
     <Content Include="Content\images\classmates\ashleysmith.jpg" />
     <Content Include="Content\images\classmates\calebmitchell.jpg" />
